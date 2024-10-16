@@ -31,11 +31,16 @@ app.use("/api", authRoutes);
 //to read the file from the uploads folder
 app.use("/uploads", express.static("uploads"));
 
-app.use(express.static(path.join(__dirname, "client/dist")));
+//use the client app
+app.use(express.static(path.join(__dirname, "/client/dist")));
+
+//render client for any path
+app.get("*", (req, res) =>
+  res.sendFile(path.join(__dirname, "/client/dist/index.html"))
+);
 
 app.listen(5000, () => {
   console.log(`server listening on port 5000`);
-  console.log(path.join(__dirname, "public"));
 });
 
 //req: contains information about the incoming HTTP request

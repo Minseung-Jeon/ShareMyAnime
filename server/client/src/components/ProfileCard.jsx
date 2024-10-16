@@ -1,4 +1,5 @@
 import React from "react";
+import erasedImage from "../../public/erased.jpg";
 
 //import CSS module
 import styles from "./ProfileCard.module.css";
@@ -10,7 +11,7 @@ function ProfileCard({ profileData, username }) {
       <div className={styles.profileImageContainer}>
         <img
           className={styles.profileImage}
-          src={`http://localhost:5000${profileData.profileImage}`}
+          src={erasedImage} 
           alt="Profile Image"
         />
       </div>

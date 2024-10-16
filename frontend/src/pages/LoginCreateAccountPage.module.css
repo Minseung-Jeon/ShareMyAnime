@@ -1,0 +1,43 @@
+.loginCreateAccountForm {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 15px;
+}
+
+.loginCreateAccountForm input {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
+
+.loginCreateAccountForm input::placeholder {
+  color: black;
+}
+
+.loginCreateAccountForm input:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+.loginCreateAccountForm button {
+  width: 100%;
+  background-color: #0077ed;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  cursor: pointer;
+}
+
+.loginCreateAccountForm button:hover {
+  background-color: #0053ba;
+}

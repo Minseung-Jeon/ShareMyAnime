@@ -1,0 +1,14 @@
+.animeCardContainer {
+  display: grid;
+  /* grid column with minimum 250px  */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px 20px;
+  
+}
+
+.animeCardContainer ul {
+  list-style: none;
+  /* browser ignores the ul tags */
+  /* now li tags will directly be treated as grid items */
+  display: contents;
+}

@@ -1,0 +1,41 @@
+/* will be used to seperate right and left section of the screen 
+right section will be for image and each page should have custom styling for the form styling */
+
+.splitScreenContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSection h1 {
+  font-family: "Poppins";
+  font-size: 2.8rem;
+  color: #000;
+  font-weight: 800;
+}
+
+.leftSection h3 {
+  font-family: "Poppins";
+  font-weight: 400;
+
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.rightSection {
+  flex: 1;
+}
+
+.rightSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,54 @@
+.animeCard {
+  /* background-color: #ddd; */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  /* overflow to make image fit the border */
+  overflow: hidden;
+  /* add shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  min-height: 500px;
+
+  /* to prevent card taking all width when only one card is fetched */
+  max-width: 300px;
+}
+
+.animeCard:hover {
+  transform: scale(1.0);
+  /* add shadow effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.animeImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.animeTitle {
+  font-family: "Rajdhani";
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem;
+}
+
+.animeCard button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #e5e4e2;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.animeCard button:hover {
+  opacity: 1;
+}
